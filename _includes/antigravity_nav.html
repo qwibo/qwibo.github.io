@@ -1,0 +1,131 @@
+<nav class="fixed w-full z-50 transition-all duration-300 bg-white/80 dark:bg-brand-dark/80 backdrop-blur-md border-b border-gray-200 dark:border-white/5"
+  id="navbar">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <!-- Logo -->
+    <a href="{{ '/' | relative_url }}{% if page.lang == 'it' %}it/{% else %}en/{% endif %}"
+      class="flex items-center hover:opacity-90 transition-opacity shrink-0">
+      <img src="/assets/images/logo/logo-horizontal-light.svg?v=3" alt="Qwibo"
+        class="h-9 w-auto object-contain dark:hidden">
+      <img src="/assets/images/logo/logo-horizontal-dark.svg?v=3" alt="Qwibo"
+        class="h-9 w-auto object-contain hidden dark:block">
+    </a>
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex items-center gap-8">
+      {% assign nav_items = site.data.navigation_en %}
+      {% if page.lang == 'it' %}
+      {% assign nav_items = site.data.navigation_it %}
+      {% endif %}
+
+      {% for item in nav_items %}
+      {% if item.url contains 'github.com' %}
+      <a href="{{ item.url }}" target="_blank" rel="noopener"
+        class="flex items-center gap-2 text-sm font-bold px-4 py-2 rounded-full border border-gray-200 dark:border-white/10 text-gray-700 dark:text-white bg-gray-50 dark:bg-white/5 hover:bg-brand-purple/10 hover:border-brand-purple/40 hover:text-brand-purple dark:hover:text-white transition-all">
+        <i class="fab fa-github"></i>
+        {{ item.title }}
+      </a>
+      {% else %}
+      {% assign is_active = false %}
+      {% if page.url == item.url or page.permalink == item.url %}
+        {% assign is_active = true %}
+      {% endif %}
+      <a href="{{ item.url | relative_url }}"
+        class="text-sm font-bold uppercase tracking-wide transition-colors relative group {% if is_active %}text-brand-purple{% else %}text-gray-500 dark:text-gray-400 hover:text-brand-purple dark:hover:text-white{% endif %}">
+        {{ item.title }}
+        <span
+          class="absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-brand-purple to-brand-pink transition-all group-hover:w-full {% if is_active %}w-full{% else %}w-0{% endif %}"></span>
+      </a>
+      {% endif %}
+      {% endfor %}
+
+      <!-- Theme Toggle -->
+      <button id="theme-toggle" class="p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors text-gray-800 dark:text-white" aria-label="Toggle Theme">
+        <i class="fas fa-sun dark:hidden"></i>
+        <i class="fas fa-moon hidden dark:inline"></i>
+      </button>
+
+      <!-- Language Switcher (Desktop) -->
+      <div class="flex items-center gap-2 text-sm font-bold uppercase tracking-wide">
+        {% if page.lang == 'it' %}
+        <span class="text-brand-purple">IT</span>
+        <span class="text-gray-600 dark:text-gray-400">|</span>
+        <a href="{{ page.url | replace: '/it/', '/en/' | relative_url }}"
+          class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">EN</a>
+        {% else %}
+        <a href="{{ page.url | replace: '/en/', '/it/' | relative_url }}"
+          class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">IT</a>
+        <span class="text-gray-600 dark:text-gray-400">|</span>
+        <span class="text-brand-purple">EN</span>
+        {% endif %}
+      </div>
+
+
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button class="md:hidden text-2xl text-gray-900 dark:text-white" onclick="toggleMobileMenu()" aria-label="Menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu"
+  class="fixed inset-0 bg-white dark:bg-brand-dark z-[60] transform translate-x-full transition-transform duration-300 flex flex-col justify-center items-center gap-8">
+  <button class="absolute top-6 right-6 text-3xl text-gray-900 dark:text-white" onclick="toggleMobileMenu()">
+    <i class="fas fa-times"></i>
+  </button>
+
+  {% assign nav_items = site.data.navigation_en %}
+  {% if page.lang == 'it' %}
+  {% assign nav_items = site.data.navigation_it %}
+  {% endif %}
+
+  {% for item in nav_items %}
+  {% if item.url contains 'github.com' %}
+  <a href="{{ item.url }}" target="_blank" rel="noopener"
+    class="text-2xl font-black flex items-center gap-3 text-gray-900 dark:text-white hover:text-brand-purple transition-colors"
+    onclick="toggleMobileMenu()"><i class="fab fa-github"></i> {{ item.title }}</a>
+  {% else %}
+  {% assign is_active = false %}
+  {% if page.url == item.url or page.permalink == item.url %}
+    {% assign is_active = true %}
+  {% endif %}
+  <a href="{{ item.url | relative_url }}"
+    class="text-3xl font-black transition-colors font-display {% if is_active %}text-brand-purple{% else %}text-gray-900 dark:text-white hover:text-brand-purple{% endif %}" onclick="toggleMobileMenu()">{{
+    item.title }}</a>
+  {% endif %}
+  {% endfor %}
+
+  <div class="flex gap-4 mt-8 flex-col items-center">
+    <!-- Language Switcher (Mobile) -->
+    <div class="flex items-center gap-4 text-xl font-bold uppercase tracking-wide mb-4">
+      {% if page.lang == 'it' %}
+      <span class="text-brand-purple border-b-2 border-brand-purple">Italiano</span>
+      <a href="{{ page.url | replace: '/it/', '/en/' | relative_url }}"
+        class="text-gray-500 hover:text-brand-purple dark:hover:text-white transition-colors">English</a>
+      {% else %}
+      <a href="{{ page.url | replace: '/en/', '/it/' | relative_url }}"
+        class="text-gray-500 hover:text-brand-purple dark:hover:text-white transition-colors">Italiano</a>
+      <span class="text-brand-purple border-b-2 border-brand-purple">English</span>
+      {% endif %}
+    </div>
+
+
+  </div>
+</div>
+
+<script>
+  function toggleMobileMenu() {
+    const menu = document.getElementById('mobile-menu');
+    const isOpen = !menu.classList.contains('translate-x-full');
+    if (isOpen) {
+      menu.classList.add('translate-x-full');
+      document.body.style.overflow = '';
+    } else {
+      menu.classList.remove('translate-x-full');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+</script>

@@ -1,0 +1,104 @@
+title: "Qwibo"
+description: "Hai una registrazione? Trasformala in testo e sottotitoli sul tuo PC. Privato, gratuito per uso personale, zero costi al minuto."
+baseurl: ""
+url: "https://qwibo.github.io"
+
+author:
+  name: "Antonio Trento"
+  email: "info@antoniotrento.net"
+  bio: "Local AI & Automation"
+
+og_image: "/assets/images/logo/favicon.svg"
+
+paginate: 20
+paginate_path: "/blog/page:num"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+
+faq_en:
+  - question: "I have a recording right now. What do I get if I install tonight?"
+    answer: "Upload a real file from your week — meeting, episode, interview, or lecture — and get readable Italian text plus subtitles if you need them. Marco uses it for follow-up emails, Giulia for publishing, Luca for quotes, Sara for exam prep. You're not exploring software. You're turning audio you already have into something you can use tomorrow morning."
+  - question: "I'm not technical. Will I get stuck during setup?"
+    answer: "Valid fear — and common. Follow the quickstart once: install dependencies, download the speech model one time, launch the app, open it in your browser. If something breaks, the docs walk through each step with fixes. Most people know within one evening whether their PC can run it. No subscription required."
+  - question: "Why not just use Otter, Google, or a per-minute website?"
+    answer: "Those paths charge by the minute, require uploads, and keep your audio on someone else's servers. Client calls, unreleased episodes, sensitive interviews — that trade-off gets old fast. Qwibo is for people who'd rather pay with disk space and patience on their own machine than with recurring bills and account lock-in."
+  - question: "Will Italian quality be good enough for real work?"
+    answer: "Honest answer: test your voice, your mic, your room. Italian is the focus, but accents, overlap, and background noise always matter. Run a 10–20 minute sample you know well. If the output saves you time versus typing it out, you have your answer. No marketing page replaces your actual recording."
+  - question: "Can I leave while a long file processes?"
+    answer: "Yes. Upload, confirm it started, close the browser if you want. Come back later for the transcript and subtitles. Giulia's 45-minute episodes and Marco's workshop recordings shouldn't glue you to a progress bar all day."
+  - question: "Is it really free? What's the catch?"
+    answer: "Personal and non-commercial use: no timer, no credit card. The catch is honest — you need a capable PC, a one-time model download, and you install it yourself. Businesses need a commercial license. No hidden cloud bill for transcription."
+  - question: "My files are confidential. Who sees them?"
+    answer: "Transcription keeps files on your computer. That's why consultants, journalists, and creators who don't trust upload services use it. AI summaries are separate — you only enable them if you pick a provider and accept that step."
+  - question: "What formats can I throw at it?"
+    answer: "What you already have: MP4 call recordings, phone memos, podcast WAV exports, lecture captures, MKV screen recordings. No manual audio prep for normal use."
+  - question: "Do I need summaries and AI extras?"
+    answer: "No. Most people only want the transcript and SRT subtitles. Summaries are for when two hours of meeting need a short recap — turn them on only if that saves you time. Start simple. Get to a first win faster."
+  - question: "What should I do in the first 30 minutes after install?"
+    answer: "Pick one file that matters — not a stress test, a real one. Upload it, let it finish, read the output, search for a phrase you remember saying. If that clicks, queue the rest of your backlog. It's a habit change, not a feature tour."
+
+faq_it:
+  - question: "Ho una registrazione adesso. Cosa ottengo se installo stasera?"
+    answer: "Carichi un file vero della tua settimana — riunione, episodio, intervista o lezione — e ottieni testo italiano leggibile più sottotitoli se ti servono. Marco per le email di follow-up, Giulia per pubblicare, Luca per le citazioni, Sara per ripassare. Non stai esplorando software: stai trasformando audio che hai già in qualcosa da usare domani mattina."
+  - question: "Non sono tecnico. Rischio di bloccarmi durante l'installazione?"
+    answer: "Paura legittima — e comune. Segui la quickstart una volta: installi le dipendenze, scarichi il modello vocale una sola volta, avvii l'app, la apri nel browser. Se qualcosa fallisce, la documentazione spiega ogni passo con i fix. La maggior parte capisce entro una sera se il proprio PC regge. Senza abbonamenti."
+  - question: "Perché non usare Otter, Google o un sito a pagamento al minuto?"
+    answer: "Quei percorsi costano al minuto, richiedono upload e tengono l'audio su server altrui. Call con clienti, episodi non pubblicati, interviste sensibili — il compromesso stanca in fretta. Qwibo è per chi preferisce pagare con spazio disco e pazienza sulla propria macchina, non con bollette ricorrenti."
+  - question: "La qualità in italiano basta per lavoro vero?"
+    answer: "Risposta onesta: prova la tua voce, il tuo microfono, la tua stanza. L'italiano è il focus, ma accenti, sovrapposizioni e rumore contano sempre. Fai un campione da 10–20 minuti che conosci bene. Se l'output ti fa risparmiare tempo rispetto alla battitura manuale, hai la risposta. Nessuna landing sostituisce la tua registrazione."
+  - question: "Posso andare via mentre elabora un file lungo?"
+    answer: "Sì. Carichi, verifichi che sia partito, chiudi pure il browser. Torni dopo per scaricare trascrizione e sottotitoli. Gli episodi da 45 minuti di Giulia e le registrazioni di Marco non devono incollarti a una barra di avanzamento tutto il giorno."
+  - question: "È davvero gratis? Qual è il trucco?"
+    answer: "Uso personale e non commerciale: niente timer, niente carta di credito. Il trucco è onesto — serve un PC capace, un download iniziale del modello, e installi tu. Le aziende necessitano licenza commerciale. Nessuna bolletta cloud nascosta per la trascrizione."
+  - question: "I miei file sono riservati. Chi li vede?"
+    answer: "La trascrizione tiene i file sul tuo computer. Per questo consulenti, giornalisti e creator che non si fidano dei servizi upload lo usano. I riassunti AI sono un passo separato — li attivi solo se scegli un provider e accetti quel compromesso."
+  - question: "Che formati posso caricare?"
+    answer: "Quelli che hai già: call in MP4, memo del telefono, export WAV di podcast, lezioni registrate, MKV di schermo. Per l'uso normale non devi preparare l'audio a mano."
+  - question: "Mi servono riassunti e extra AI?"
+    answer: "No. La maggior parte vuole solo trascrizione e SRT. I riassunti servono quando due ore di riunione richiedono una sintesi — attivali solo se ti fanno risparmiare tempo. Parti semplice. Arrivi al primo risultato più in fretta."
+  - question: "Cosa faccio nei primi 30 minuti dopo l'installazione?"
+    answer: "Scegli un file che ti importa — non uno stress test, uno vero. Caricalo, attendi, leggi l'output, cerca una frase che ricordi di aver detto. Se funziona, accoda il resto del backlog. È un cambio di abitudine, non un tour delle funzioni."
+
+social:
+  github: "https://github.com/qwibo/qwibo"
+  twitter: "https://x.com/antoniotrento"
+
+cta:
+  github_url: "https://github.com/qwibo/qwibo"
+  docs_url: "https://qwibo.github.io/docs"
+
+# MkDocs i18n (folder): English at /docs/, Italian at /docs/it/
+docs:
+  base_en: "/docs/"
+  base_it: "/docs/it/"
+
+popup:
+  url: "https://github.com/qwibo/qwibo"
+  en:
+    title: "Got a recording to transcribe?"
+    body: "Install tonight, upload one real file, get text and subtitles on your PC. No per-minute fees, no forced upload."
+    button: "Install Tonight"
+  it:
+    title: "Hai una registrazione da trascrivere?"
+    body: "Installa stasera, carica un file vero, ottieni testo e sottotitoli sul tuo PC. Zero costi al minuto, niente upload obbligatorio."
+    button: "Installa Stasera"
+
+permalink: "/:categories/:title/"
+markdown: kramdown
+highlighter: rouge
+
+include:
+  - assets
+  - robots.txt
+
+keywords:
+  - trascrizione audio
+  - speech to text italiano
+  - nemo parakeet
+  - trascrizione video
+  - whisper alternative
+  - local asr
+  - riassunto llm

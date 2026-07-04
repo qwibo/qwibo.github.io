@@ -1,0 +1,184 @@
+---
+layout: default
+title: "System Architecture"
+lang: en
+permalink: /en/architecture/
+---
+
+<!-- Hero Section -->
+<section class="relative pt-32 pb-20 overflow-hidden bg-grid-pattern border-b border-gray-200 dark:border-white/10">
+    <div class="absolute inset-0 bg-white/90 dark:bg-brand-dark/90 transition-colors"></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <div class="inline-flex items-center gap-2 px-3 py-1 bg-brand-purple/10 border-l-2 border-brand-purple text-brand-purple text-xs font-mono font-bold uppercase mb-6">
+                YOUR FIRST HOUR
+            </div>
+            <h1 class="text-5xl md:text-7xl font-black font-display mb-6 text-gray-900 dark:text-white uppercase tracking-tighter">
+                Your first hour, <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-purple to-brand-pink">minute by minute</span>
+            </h1>
+            <p class="text-xl text-gray-600 dark:text-gray-400 font-mono text-sm leading-relaxed">
+                This page walks you through the first hour — not infrastructure deep dives. Upload a file, work runs in background, download usable output. The question isn't "how is it built inside" but "can I install tonight and use it tomorrow without friction?" Answer below.
+            </p>
+        </div>
+
+        <!-- Pipeline Topology (HTML diagram) -->
+        <div class="rounded-[2.5rem] overflow-hidden shadow-2xl border border-gray-200 dark:border-white/10 mb-20 relative bg-[#0a0a0a] p-8 md:p-12">
+            <div class="grid md:grid-cols-5 gap-4 items-center font-mono text-xs">
+                <div class="bg-[#111] border border-brand-purple/40 p-6 text-center rounded-xl">
+                    <i class="fas fa-desktop text-2xl text-brand-purple mb-3"></i>
+                    <div class="text-white font-bold uppercase mb-1">Upload</div>
+                    <div class="text-gray-500">Pick one real recording</div>
+                </div>
+                <div class="hidden md:flex justify-center text-brand-purple text-2xl"><i class="fas fa-arrow-right"></i></div>
+                <div class="bg-[#111] border border-brand-pink/40 p-6 text-center rounded-xl">
+                    <i class="fas fa-database text-2xl text-brand-pink mb-3"></i>
+                    <div class="text-white font-bold uppercase mb-1">Wait</div>
+                    <div class="text-gray-500">Continue your normal work</div>
+                </div>
+                <div class="hidden md:flex justify-center text-brand-pink text-2xl"><i class="fas fa-arrow-right"></i></div>
+                <div class="bg-[#111] border border-green-500/40 p-6 text-center rounded-xl">
+                    <i class="fas fa-cogs text-2xl text-green-500 mb-3"></i>
+                    <div class="text-white font-bold uppercase mb-1">Download</div>
+                    <div class="text-gray-500">Use text and subtitles now</div>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-4 mt-8">
+                <div class="bg-[#111] border border-white/10 p-5 rounded-xl text-center">
+                    <div class="text-yellow-500 font-bold uppercase mb-1">Step 1</div>
+                    <div class="text-gray-500">Install and launch once</div>
+                </div>
+                <div class="bg-[#111] border border-white/10 p-5 rounded-xl text-center">
+                    <div class="text-green-500 font-bold uppercase mb-1">Step 2</div>
+                    <div class="text-gray-500">Try your first file tonight</div>
+                </div>
+                <div class="bg-[#111] border border-white/10 p-5 rounded-xl text-center">
+                    <div class="text-brand-gold font-bold uppercase mb-1">Step 3</div>
+                    <div class="text-gray-500">Repeat weekly with confidence</div>
+                </div>
+            </div>
+            <div class="absolute bottom-6 left-6 right-6">
+                <p class="text-white/60 font-mono text-xs uppercase tracking-widest">Fig 1. First-hour flow — overview</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Tech Stack Section -->
+<section class="py-24 bg-gray-50 dark:bg-brand-surface transition-colors border-b border-gray-200 dark:border-white/10">
+    <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-3xl font-black font-display mb-16 text-center text-gray-900 dark:text-white uppercase tracking-tighter">The three fears that stop you — and the answers</h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white dark:bg-brand-dark p-8 rounded-3xl border border-gray-200 dark:border-white/10 hover:border-brand-purple transition-all group">
+                <div class="w-14 h-14 bg-green-500/10 rounded-2xl flex items-center justify-center text-green-500 mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fas fa-microchip text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">"Will it be readable in Italian?"</h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                    The question isn't technical: "does it understand my everyday speech?" The answer is one real test — call, interview, episode, or lecture. If the text is useful right away, you already have your reason to keep it.
+                </p>
+            </div>
+            <div class="bg-white dark:bg-brand-dark p-8 rounded-3xl border border-gray-200 dark:border-white/10 hover:border-brand-pink transition-all group">
+                <div class="w-14 h-14 bg-brand-pink/10 rounded-2xl flex items-center justify-center text-brand-pink mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fas fa-bolt text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">"I'll get lost in the interface"</h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                    You need to see clearly what's happening to your files, without complicated menus. Upload, check progress, download result. For Marco and Giulia: less operational friction. For Luca and Sara: less time lost in unclear tools.
+                </p>
+            </div>
+            <div class="bg-white dark:bg-brand-dark p-8 rounded-3xl border border-gray-200 dark:border-white/10 hover:border-brand-purple transition-all group">
+                <div class="w-14 h-14 bg-blue-500/10 rounded-2xl flex items-center justify-center text-blue-400 mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fab fa-docker text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">"What about after the first file?"</h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                    When the first test works, it becomes part of your routine. Process consistently without depending on pay-per-use services. Footer has a technical reference for anyone who wants to go deeper.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Deep Dive: Worker Daemon -->
+<section class="py-24 bg-white dark:bg-brand-dark transition-colors">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+            <div>
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-brand-pink/10 border-l-2 border-brand-pink text-brand-pink text-xs font-mono font-bold uppercase mb-6">
+                    FIRST-HOUR FAQ
+                </div>
+                <h2 class="text-4xl font-black font-display mb-6 text-gray-900 dark:text-white uppercase tracking-tighter">What changes from your first file</h2>
+                <p class="text-gray-600 dark:text-gray-400 mb-6">
+                    The first doubts get answered in plain language, not buried in technical detail. "Can my PC handle this?" — run one representative file tonight, don't guess from benchmarks. "Will Italian output be good enough?" — same: your meeting, interview, episode, or lecture. "Can I trust long recordings?" — start it, come back to results, no babysitting every minute.
+                </p>
+                <p class="text-gray-600 dark:text-gray-400 mb-6">
+                    Privacy and licensing block people too, especially after unclear cloud terms. Here the core workflow stays simple and low-risk: install, test, evaluate, repeat. If the output helps, keep going; if not, you learned fast without lock-in. Marco, Giulia, Luca, and Sara decide from results, not promises.
+                </p>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-center gap-3 text-gray-900 dark:text-white font-medium">
+                        <i class="fas fa-redo text-brand-purple"></i> "Can I install this tonight?" -> Yes, follow quickstart and run one file.
+                    </li>
+                    <li class="flex items-center gap-3 text-gray-900 dark:text-white font-medium">
+                        <i class="fas fa-folder-open text-brand-pink"></i> "Will long files break my day?" -> No, process and return later.
+                    </li>
+                    <li class="flex items-center gap-3 text-gray-900 dark:text-white font-medium">
+                        <i class="fas fa-layer-group text-green-500"></i> "Is free personal use real?" -> Yes, clearly stated and immediate.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="relative bg-[#0d1117] rounded-2xl overflow-hidden border border-gray-800 shadow-2xl">
+                <div class="flex items-center gap-2 px-4 py-3 bg-[#161b22] border-b border-gray-800">
+                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                    <span class="ml-4 text-xs text-gray-500 font-mono">Tuesday_Morning.txt</span>
+                </div>
+                <div class="p-6 overflow-x-auto text-sm font-mono leading-relaxed text-gray-300">
+<pre><code><span class="text-gray-500">Before</span>
+Marco postpones recap emails because notes are incomplete.
+Giulia delays captions and feels pressure near publish time.
+Luca spends extra hours replaying interview audio for quotes.
+Sara avoids reviewing long lectures because manual replay is exhausting.
+
+<span class="text-gray-500">After first file</span>
+Each person uploads one real recording and moves on with work.
+Processing completes while other tasks continue in parallel.
+Transcript and subtitle outputs become reusable working assets.
+The new routine becomes weekly because it saves real time.</code></pre>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-32 bg-gray-900 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+    <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
+        <h2 class="text-5xl md:text-6xl font-black font-display mb-6 text-white uppercase tracking-tighter">
+            Your first file is <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-purple to-brand-pink">waiting</span>
+        </h2>
+        <p class="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
+            If you've read this far, don't wait for a perfect moment. Open quickstart, process one real file, and see if your next recap, episode, article, or study session gets easier. That single test is what matters. Technical note: one local speech model powers the core transcription path.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="https://github.com/qwibo/qwibo" target="_blank" rel="noopener"
+                class="px-8 py-4 bg-white text-gray-900 font-bold rounded-full hover:scale-105 transition-transform flex items-center justify-center gap-3">
+                <i class="fab fa-github text-xl"></i>
+                Install Tonight
+            </a>
+            <a href="/docs/getting-started/quickstart/"
+                class="px-8 py-4 border border-white/20 text-white font-bold rounded-full hover:bg-white/10 transition-all flex items-center justify-center gap-3">
+                Try Your First File
+            </a>
+            <a href="/en/strategies/"
+                class="px-8 py-4 border border-white/20 text-white font-bold rounded-full hover:bg-white/10 transition-all flex items-center justify-center gap-3">
+                Read Persona Scenarios
+            </a>
+        </div>
+    </div>
+</section>

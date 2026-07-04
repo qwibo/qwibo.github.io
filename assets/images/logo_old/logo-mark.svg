@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" role="img" aria-label="Sbobinator">
+  <defs>
+    <linearGradient id="g" x1="64" y1="64" x2="448" y2="448" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded frame (reads well at 4864px) -->
+  <rect x="48" y="48" width="416" height="416" rx="96" stroke="url(#g)" stroke-width="20"/>
+
+  <!-- Waveform ’ text (transcription metaphor) -->
+  <g stroke="url(#g)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round">
+    <!-- waveform -->
+    <line x1="132" y1="272" x2="132" y2="240"/>
+    <line x1="162" y1="288" x2="162" y2="224"/>
+    <line x1="192" y1="304" x2="192" y2="208"/>
+    <line x1="222" y1="280" x2="222" y2="232"/>
+    <line x1="252" y1="264" x2="252" y2="248"/>
+    <!-- bridge -->
+    <path d="M252 256 H292"/>
+    <!-- text lines -->
+    <line x1="292" y1="232" x2="372" y2="232"/>
+    <line x1="292" y1="256" x2="388" y2="256"/>
+    <line x1="292" y1="280" x2="356" y2="280"/>
+  </g>
+</svg>

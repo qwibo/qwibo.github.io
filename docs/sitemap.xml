@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://qwibo.github.io/docs/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/changelog/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/changelog/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/changelog/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/development/build-installer/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/development/build-installer/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/development/build-installer/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/getting-started/download/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/getting-started/download/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/getting-started/download/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/getting-started/first-run/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/getting-started/first-run/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/getting-started/first-run/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/getting-started/models/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/getting-started/models/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/getting-started/models/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/getting-started/overview/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/getting-started/overview/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/getting-started/overview/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/getting-started/system-requirements/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/getting-started/system-requirements/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/getting-started/system-requirements/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/reference/commercial-license/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/reference/commercial-license/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/reference/commercial-license/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/reference/faq/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/reference/faq/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/reference/faq/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/reference/licenses/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/reference/licenses/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/reference/licenses/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/troubleshooting/common-issues/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/troubleshooting/common-issues/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/troubleshooting/common-issues/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/troubleshooting/smartscreen/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/troubleshooting/smartscreen/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/troubleshooting/smartscreen/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/user-guide/app-interface/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/user-guide/app-interface/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/user-guide/app-interface/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/user-guide/file-formats/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/user-guide/file-formats/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/user-guide/file-formats/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/user-guide/jobs-and-output/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/user-guide/jobs-and-output/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/user-guide/jobs-and-output/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/user-guide/summarization/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/user-guide/summarization/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/user-guide/summarization/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/user-guide/transcribe-and-summarize/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/user-guide/transcribe-and-summarize/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/user-guide/transcribe-and-summarize/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/it/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/it/changelog/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/changelog/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/changelog/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/it/development/build-installer/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/development/build-installer/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/development/build-installer/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/it/getting-started/download/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/getting-started/download/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/getting-started/download/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/it/getting-started/first-run/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/getting-started/first-run/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/getting-started/first-run/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/it/getting-started/models/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/getting-started/models/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/getting-started/models/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/it/getting-started/overview/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/getting-started/overview/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/getting-started/overview/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/it/getting-started/system-requirements/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/getting-started/system-requirements/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/getting-started/system-requirements/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/it/reference/commercial-license/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/reference/commercial-license/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/reference/commercial-license/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/it/reference/faq/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/reference/faq/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/reference/faq/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/it/reference/licenses/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/reference/licenses/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/reference/licenses/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/it/troubleshooting/common-issues/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/troubleshooting/common-issues/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/troubleshooting/common-issues/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/it/troubleshooting/smartscreen/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/troubleshooting/smartscreen/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/troubleshooting/smartscreen/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/it/user-guide/app-interface/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/user-guide/app-interface/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/user-guide/app-interface/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/it/user-guide/file-formats/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/user-guide/file-formats/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/user-guide/file-formats/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/it/user-guide/jobs-and-output/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/user-guide/jobs-and-output/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/user-guide/jobs-and-output/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/it/user-guide/summarization/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/user-guide/summarization/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/user-guide/summarization/"/>
+    </url>
+    <url>
+        <loc>https://qwibo.github.io/docs/it/user-guide/transcribe-and-summarize/</loc>
+        <lastmod>2026-07-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="https://qwibo.github.io/docs/it/user-guide/transcribe-and-summarize/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://qwibo.github.io/docs/user-guide/transcribe-and-summarize/"/>
+    </url>
+</urlset>

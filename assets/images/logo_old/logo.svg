@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" role="img" aria-label="Sbobinator">
+  <defs>
+    <linearGradient id="sbob-grad" x1="96" y1="96" x2="416" y2="416" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="55%" stop-color="#14b8a6"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <linearGradient id="sbob-grad-soft" x1="120" y1="140" x2="392" y2="372" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Spool ring: sbobina / unwind metaphor -->
+  <circle cx="196" cy="256" r="88" stroke="url(#sbob-grad)" stroke-width="22" stroke-linecap="round"
+    stroke-dasharray="420 140" transform="rotate(-35 196 256)"/>
+
+  <!-- Audio waveform inside spool -->
+  <g stroke="url(#sbob-grad-soft)" stroke-width="14" stroke-linecap="round">
+    <line x1="156" y1="220" x2="156" y2="292"/>
+    <line x1="186" y1="204" x2="186" y2="308"/>
+    <line x1="216" y1="228" x2="216" y2="284"/>
+    <line x1="246" y1="212" x2="246" y2="300"/>
+  </g>
+
+  <!-- Thread unwinding into text lines -->
+  <path d="M284 256 C318 256, 334 236, 360 220" stroke="url(#sbob-grad)" stroke-width="12" stroke-linecap="round"/>
+  <path d="M284 256 C320 256, 342 256, 368 256" stroke="url(#sbob-grad)" stroke-width="12" stroke-linecap="round"/>
+  <path d="M284 256 C318 256, 336 276, 360 292" stroke="url(#sbob-grad)" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- Text lines (transcription output) -->
+  <g stroke="url(#sbob-grad)" stroke-width="16" stroke-linecap="round">
+    <line x1="368" y1="220" x2="430" y2="220"/>
+    <line x1="368" y1="256" x2="448" y2="256"/>
+    <line x1="368" y1="292" x2="418" y2="292"/>
+  </g>
+
+  <!-- Subtle terminal dot -->
+  <circle cx="452" cy="256" r="10" fill="#10b981"/>
+</svg>
