@@ -16,14 +16,14 @@
     {% if page.lang == 'it' %}
     <h4 class="text-lg font-bold mb-2 text-neutral-900 dark:text-white">{{ site.popup.it.title }}</h4>
     <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">{{ site.popup.it.body }}</p>
-    <a href="{{ site.popup.url }}"
+    <a href="{{ site.popup.it.url | default: site.popup.url }}"
       class="block w-full py-3 rounded-xl bg-black dark:bg-white text-white dark:text-black font-bold text-center hover:bg-brand-purple dark:hover:bg-brand-purple dark:hover:text-white transition-colors">
       {{ site.popup.it.button }}
     </a>
     {% else %}
     <h4 class="text-lg font-bold mb-2 text-neutral-900 dark:text-white">{{ site.popup.en.title }}</h4>
     <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">{{ site.popup.en.body }}</p>
-    <a href="{{ site.popup.url }}"
+    <a href="{{ site.popup.en.url | default: site.popup.url }}"
       class="block w-full py-3 rounded-xl bg-black dark:bg-white text-white dark:text-black font-bold text-center hover:bg-brand-purple dark:hover:bg-brand-purple dark:hover:text-white transition-colors">
       {{ site.popup.en.button }}
     </a>

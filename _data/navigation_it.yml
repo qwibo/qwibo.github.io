@@ -2,9 +2,12 @@
   url: "/it/about/"
 - title: "Funzionalità"
   url: "/it/strategies/"
-- title: "Architettura"
+- title: "Come funziona"
   url: "/it/architecture/"
 - title: "Docs"
   url: "/docs/it/"
 - title: "GitHub"
   url: "https://github.com/qwibo/qwibo"
+- title: "Scarica"
+  url: "/it/download/"
+  cta: true

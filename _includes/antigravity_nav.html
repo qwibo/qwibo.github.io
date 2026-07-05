@@ -19,7 +19,13 @@
       {% endif %}
 
       {% for item in nav_items %}
-      {% if item.url contains 'github.com' %}
+      {% if item.cta %}
+      <a href="{{ item.url | relative_url }}"
+        class="flex items-center gap-2 text-sm font-bold px-5 py-2 rounded-full bg-brand-purple text-white hover:bg-brand-pink transition-all shadow-sm">
+        <i class="fas fa-download"></i>
+        {{ item.title }}
+      </a>
+      {% elsif item.url contains 'github.com' %}
       <a href="{{ item.url }}" target="_blank" rel="noopener"
         class="flex items-center gap-2 text-sm font-bold px-4 py-2 rounded-full border border-gray-200 dark:border-white/10 text-gray-700 dark:text-white bg-gray-50 dark:bg-white/5 hover:bg-brand-purple/10 hover:border-brand-purple/40 hover:text-brand-purple dark:hover:text-white transition-all">
         <i class="fab fa-github"></i>
@@ -83,7 +89,11 @@
   {% endif %}
 
   {% for item in nav_items %}
-  {% if item.url contains 'github.com' %}
+  {% if item.cta %}
+  <a href="{{ item.url | relative_url }}"
+    class="text-2xl font-black flex items-center gap-3 px-6 py-3 rounded-full bg-brand-purple text-white hover:bg-brand-pink transition-colors"
+    onclick="toggleMobileMenu()"><i class="fas fa-download"></i> {{ item.title }}</a>
+  {% elsif item.url contains 'github.com' %}
   <a href="{{ item.url }}" target="_blank" rel="noopener"
     class="text-2xl font-black flex items-center gap-3 text-gray-900 dark:text-white hover:text-brand-purple transition-colors"
     onclick="toggleMobileMenu()"><i class="fab fa-github"></i> {{ item.title }}</a>
