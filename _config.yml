@@ -74,24 +74,6 @@ cta:
   download_page_it: "/it/download/"
   download_page_en: "/en/download/"
 
-# Hero stat: language cycle (matches qwibo CORE_LANGUAGE_CODES)
-hero_languages:
-  - code: IT
-    label_it: Italiano
-    label_en: Italian
-  - code: EN
-    label_it: Inglese
-    label_en: English
-  - code: ES
-    label_it: Spagnolo
-    label_en: Spanish
-  - code: DE
-    label_it: Tedesco
-    label_en: German
-  - code: FR
-    label_it: Francese
-    label_en: French
-
 # MkDocs i18n (folder): English at /docs/, Italian at /docs/it/
 docs:
   base_en: "/docs/"
