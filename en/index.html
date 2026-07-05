@@ -6,7 +6,7 @@ locale: en_US
 description: "Got a recording? Turn it into text and subtitles on your PC. Private, free for personal use, no per-minute fees."
 ---
 
-<section class="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden bg-grid-pattern">
+<section class="relative min-h-screen flex items-center pt-32 pb-20 overflow-x-hidden bg-grid-pattern">
     <div class="absolute inset-0 bg-white/90 dark:bg-brand-dark/90 transition-colors"></div>
 
     <div class="max-w-7xl mx-auto hero-index__grid grid gap-8 items-center px-6 w-full relative z-10">
@@ -55,38 +55,38 @@ description: "Got a recording? Turn it into text and subtitles on your PC. Priva
             </div>
         </div>
 
-        <div class="reveal delay-200 relative min-w-0 lg:overflow-visible">
-            <div class="hero-index__visual relative">
+        <div class="reveal delay-200 relative min-w-0 w-full">
+            <div class="hero-index__visual relative flex flex-col w-full max-w-full">
+            {% include hero-qwibo-animation.html %}
             <div class="relative bg-[#0a0a0a] rounded-lg border border-brand-purple/30 shadow-2xl overflow-hidden font-mono text-xs">
-                <div class="bg-[#111] px-4 py-2 flex items-center justify-between border-b border-white/10">
+                <div class="bg-[#111] px-3 py-1.5 flex items-center justify-between border-b border-white/10">
                     <div class="flex gap-2">
                         <div class="w-3 h-3 rounded-full bg-red-500"></div>
                         <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
                         <div class="w-3 h-3 rounded-full bg-green-500"></div>
                     </div>
-                    <div class="text-gray-500">qwibo — first run</div>
+                    <div class="text-gray-500 text-[11px]">qwibo — first run</div>
                 </div>
-                <div class="p-4 space-y-2 text-gray-300 h-[400px] overflow-hidden flex flex-col justify-end relative">
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent z-10 pointer-events-none"></div>
-                    <div class="opacity-30"> Upload: Tuesday_Client_Workshop.mp4</div>
-                    <div class="opacity-40"> Marco leaves for coffee while processing continues…</div>
-                    <div class="opacity-50"> Italian transcription running (1h 12m recording)</div>
-                    <div class="opacity-60"> Progress: 68% — you can keep working</div>
-                    <div class="opacity-80"> Done: transcript ready for decisions and follow-up email</div>
-                    <div class="text-brand-purpleLight"> Export: subtitles.srt for Giulia's episode timeline</div>
-                    <div class="text-green-400"> Stored on your computer so sensitive voices stay yours</div>
-                    <div class="text-brand-pink"> Optional summary: off unless you choose to enable it</div>
-                    <div class="text-gray-400 mt-4 flex items-center gap-2">
+                <div class="px-3 py-2.5 space-y-1 text-gray-300 leading-snug">
+                    <div class="opacity-30 text-gray-500">Upload: marco_call_2h.mp4</div>
+                    <div class="opacity-40">Marco walks away — processing continues locally</div>
+                    <div class="opacity-50">Italian transcription (1h 12m recording)</div>
+                    <div class="opacity-60">Progress: 68% — keep working meanwhile</div>
+                    <div class="opacity-80">Done: searchable transcript ready</div>
+                    <div class="text-brand-purpleLight">Export: subtitles.srt for Giulia's timeline</div>
+                    <div class="text-green-400">Stored on your PC — no upload required</div>
+                    <div class="text-brand-pink">Optional summary: enable only when you need it</div>
+                    <div class="text-gray-400 mt-1.5 flex items-center gap-2">
                         <span class="text-brand-purple">➜</span>
                         <span class="typing-animation border-r-2 border-brand-purple pr-1 animate-pulse">Try your first file</span>
                     </div>
                 </div>
             </div>
-            <div class="absolute lg:right-4 xl:-right-4 top-1/4 bg-white dark:bg-brand-dark border border-gray-200 dark:border-white/10 p-4 rounded shadow-xl hidden md:block">
+            <div class="absolute right-3 top-[calc(11.5rem+1rem)] bg-white dark:bg-brand-dark border border-gray-200 dark:border-white/10 p-3 rounded shadow-xl hidden lg:block max-w-[10rem]">
                 <div class="text-[10px] text-gray-500 uppercase font-mono mb-1">Typical case</div>
-                <div class="text-sm font-bold font-mono text-brand-purple">Marco: 2h call → usable notes</div>
+                <div class="text-sm font-bold font-mono text-brand-purple">Marco: 2h call → notes</div>
             </div>
-            <div class="absolute -left-8 bottom-1/4 bg-white dark:bg-brand-dark border border-gray-200 dark:border-white/10 p-4 rounded shadow-xl hidden lg:block">
+            <div class="absolute left-3 bottom-4 bg-white dark:bg-brand-dark border border-gray-200 dark:border-white/10 p-3 rounded shadow-xl hidden lg:block max-w-[10rem]">
                 <div class="text-[10px] text-gray-500 uppercase font-mono mb-1">Privacy</div>
                 <div class="text-sm font-bold font-mono text-green-500">Stays on your PC</div>
             </div>

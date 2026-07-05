@@ -1,0 +1,228 @@
+/* Hero Qwibo Unroll — fixed height, no layout shift, 8s loop */
+
+.hero-qwibo {
+    width: 100%;
+    margin-bottom: 0.75rem;
+    flex-shrink: 0;
+}
+
+.hero-qwibo__stage {
+    width: 100%;
+    height: 11.5rem;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    background: #0a0a0a;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.45);
+}
+
+.hero-qwibo__stage svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* 8s master loop */
+.hero-qwibo__file {
+    opacity: 0;
+    animation: qwibo-file 8s ease-in-out infinite;
+}
+
+.hero-qwibo__reel {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: qwibo-reel-pulse 8s ease-in-out infinite;
+}
+
+.hero-qwibo__tape {
+    stroke-dasharray: 160;
+    stroke-dashoffset: 160;
+    animation: qwibo-tape-draw 8s ease-in-out infinite;
+}
+
+.hero-qwibo__tape-line {
+    stroke-dasharray: 50;
+    stroke-dashoffset: 50;
+    animation: qwibo-tape-lines 8s ease-in-out infinite;
+}
+
+.hero-qwibo__glow {
+    opacity: 0;
+    animation: qwibo-glow 8s ease-in-out infinite;
+}
+
+.hero-qwibo__particle {
+    opacity: 0;
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: qwibo-particle 8s linear infinite;
+}
+
+.hero-qwibo__tape-line--2 {
+    animation-delay: 0.1s;
+}
+
+.hero-qwibo__tape-line--3 {
+    animation-delay: 0.2s;
+}
+
+.hero-qwibo__particle--2 {
+    animation-delay: 0.12s;
+}
+
+.hero-qwibo__particle--3 {
+    animation-delay: 0.24s;
+}
+
+.hero-qwibo__doc {
+    opacity: 0;
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: qwibo-doc 8s ease-in-out infinite;
+}
+
+.hero-qwibo__line {
+    opacity: 0;
+    animation: qwibo-line 8s ease-in-out infinite;
+}
+
+.hero-qwibo__line--2 {
+    animation-delay: 0.08s;
+}
+
+.hero-qwibo__srt {
+    opacity: 0;
+    animation: qwibo-srt 8s ease-in-out infinite;
+}
+
+.hero-qwibo__summary {
+    opacity: 0;
+    animation: qwibo-summary 8s ease-in-out infinite;
+}
+
+@keyframes qwibo-file {
+    0%, 3%, 92%, 100% { opacity: 0; }
+    7%, 78% { opacity: 1; }
+    88% { opacity: 0.2; }
+}
+
+@keyframes qwibo-reel-pulse {
+    0%, 8%, 100% { transform: scale(1) rotate(0deg); }
+    12% { transform: scale(1.08) rotate(-4deg); }
+    16% { transform: scale(1) rotate(0deg); }
+    20% { transform: scale(1.05) rotate(3deg); }
+    24%, 78% { transform: scale(1) rotate(0deg); }
+}
+
+@keyframes qwibo-tape-draw {
+    0%, 14%, 92%, 100% { stroke-dashoffset: 160; }
+    32%, 78% { stroke-dashoffset: 0; }
+    88% { stroke-dashoffset: 160; }
+}
+
+@keyframes qwibo-tape-lines {
+    0%, 26%, 92%, 100% { stroke-dashoffset: 50; }
+    38%, 78% { stroke-dashoffset: 0; }
+    88% { stroke-dashoffset: 50; }
+}
+
+@keyframes qwibo-glow {
+    0%, 16%, 90%, 100% { opacity: 0; }
+    22%, 42% { opacity: 0.5; }
+    52%, 78% { opacity: 0.3; }
+    86% { opacity: 0; }
+}
+
+@keyframes qwibo-particle {
+    0%, 16%, 90%, 100% {
+        opacity: 0;
+        transform: translateX(0);
+    }
+    20% { opacity: 0.95; }
+    34% {
+        opacity: 0.95;
+        transform: translateX(108px);
+    }
+    38% { opacity: 0; }
+    78% { opacity: 0; }
+}
+
+@keyframes qwibo-doc {
+    0%, 28%, 92%, 100% {
+        opacity: 0;
+        transform: translateY(6px) scale(0.98);
+    }
+    34%, 78% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    88% {
+        opacity: 0;
+        transform: translateY(4px) scale(0.99);
+    }
+}
+
+@keyframes qwibo-line {
+    0%, 34%, 92%, 100% { opacity: 0; }
+    40%, 78% { opacity: 1; }
+    88% { opacity: 0; }
+}
+
+@keyframes qwibo-srt {
+    0%, 42%, 92%, 100% {
+        opacity: 0;
+        transform: translateY(4px);
+    }
+    48%, 78% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    88% { opacity: 0; }
+}
+
+@keyframes qwibo-summary {
+    0%, 54%, 92%, 100% {
+        opacity: 0;
+        transform: translateY(4px) scale(0.96);
+    }
+    60%, 78% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    88% { opacity: 0; }
+}
+
+@media (min-width: 640px) {
+    .hero-qwibo__stage {
+        height: 12.5rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-qwibo__file,
+    .hero-qwibo__reel,
+    .hero-qwibo__tape,
+    .hero-qwibo__tape-line,
+    .hero-qwibo__glow,
+    .hero-qwibo__particle,
+    .hero-qwibo__doc,
+    .hero-qwibo__line,
+    .hero-qwibo__srt,
+    .hero-qwibo__summary {
+        animation: none !important;
+    }
+
+    .hero-qwibo__file { opacity: 1; }
+    .hero-qwibo__tape,
+    .hero-qwibo__tape-line { stroke-dashoffset: 0; }
+    .hero-qwibo__glow { opacity: 0.3; }
+    .hero-qwibo__particle { opacity: 0; }
+    .hero-qwibo__doc,
+    .hero-qwibo__line,
+    .hero-qwibo__srt,
+    .hero-qwibo__summary {
+        opacity: 1;
+        transform: none;
+    }
+}

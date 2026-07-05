@@ -118,7 +118,7 @@
             transition-delay: 400ms;
         }
 
-        /* Index hero: mobile title + desktop visual bleed */
+        /* Index hero: balanced two columns on desktop (no visual bleed) */
         .hero-index__title {
             font-size: clamp(1.75rem, 7.8vw, 2.5rem);
             line-height: 1.05;
@@ -132,18 +132,19 @@
 
         @media (min-width: 1024px) {
             .hero-index__grid {
-                grid-template-columns: minmax(0, 1.25fr) minmax(220px, 0.45fr);
+                grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
                 gap: 2.5rem;
+                align-items: center;
             }
 
             .hero-index__title {
-                font-size: clamp(3.25rem, 4.2vw, 4.5rem);
+                font-size: clamp(2.5rem, 3.5vw, 3.75rem);
             }
 
             .hero-index__visual {
-                width: calc(100% + clamp(8rem, 18vw, 16rem));
-                margin-right: calc(-1 * clamp(6rem, 16vw, 14rem));
-                max-width: none;
+                width: 100%;
+                max-width: 100%;
+                margin-right: 0;
             }
         }
 
