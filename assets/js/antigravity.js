@@ -8,6 +8,51 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
 }
 
 
+const HERO_LANGUAGES = {
+  it: [
+    { code: 'IT', label: 'Italiano' },
+    { code: 'EN', label: 'Inglese' },
+    { code: 'ES', label: 'Spagnolo' },
+    { code: 'DE', label: 'Tedesco' },
+    { code: 'FR', label: 'Francese' },
+  ],
+  en: [
+    { code: 'IT', label: 'Italian' },
+    { code: 'EN', label: 'English' },
+    { code: 'ES', label: 'Spanish' },
+    { code: 'DE', label: 'German' },
+    { code: 'FR', label: 'French' },
+  ],
+};
+
+function initHeroLangCycle() {
+  const root = document.querySelector('[data-hero-lang-cycle]');
+  if (!root) return;
+
+  const locale = document.documentElement.lang === 'it' ? 'it' : 'en';
+  const langs = HERO_LANGUAGES[locale];
+  const codeEl = root.querySelector('[data-hero-lang-code]');
+  const labelEl = root.querySelector('[data-hero-lang-label]');
+  if (!codeEl || !labelEl || !langs.length) return;
+
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    codeEl.textContent = langs.map((l) => l.code).join(' · ');
+    labelEl.textContent = locale === 'it' ? '5 lingue' : '5 languages';
+    return;
+  }
+
+  let index = 0;
+  setInterval(() => {
+    root.style.opacity = '0';
+    setTimeout(() => {
+      index = (index + 1) % langs.length;
+      codeEl.textContent = langs[index].code;
+      labelEl.textContent = langs[index].label;
+      root.style.opacity = '1';
+    }, 300);
+  }, 2400);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   // --- UI Elements ---
   const mobileMenuBtn = document.getElementById('mobile-menu-btn');
@@ -209,5 +254,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     aiResults.appendChild(container);
   }
+
+  initHeroLangCycle();
 
 });
