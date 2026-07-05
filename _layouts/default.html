@@ -118,6 +118,35 @@
             transition-delay: 400ms;
         }
 
+        /* Index hero: mobile title + desktop visual bleed */
+        .hero-index__title {
+            font-size: clamp(1.75rem, 7.8vw, 2.5rem);
+            line-height: 1.05;
+        }
+
+        @media (min-width: 640px) {
+            .hero-index__title {
+                font-size: clamp(2.25rem, 5.5vw, 3.75rem);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .hero-index__grid {
+                grid-template-columns: minmax(0, 1.25fr) minmax(220px, 0.45fr);
+                gap: 2.5rem;
+            }
+
+            .hero-index__title {
+                font-size: clamp(3.25rem, 4.2vw, 4.5rem);
+            }
+
+            .hero-index__visual {
+                width: calc(100% + clamp(8rem, 18vw, 16rem));
+                margin-right: calc(-1 * clamp(6rem, 16vw, 14rem));
+                max-width: none;
+            }
+        }
+
         /* Custom Animations */
         @keyframes float {
 
