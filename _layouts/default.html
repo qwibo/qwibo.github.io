@@ -147,6 +147,43 @@
             }
         }
 
+        /* Hero stat: cycling languages */
+        .lang-cycle__code-wrap,
+        .lang-cycle__label-wrap {
+            position: relative;
+            overflow: hidden;
+            min-height: 1.75rem;
+        }
+
+        .lang-cycle__label-wrap {
+            min-height: 1rem;
+        }
+
+        .lang-cycle__code,
+        .lang-cycle__label {
+            display: inline-block;
+            transition: opacity 0.35s ease, transform 0.35s ease;
+        }
+
+        .lang-cycle__code.lang-cycle--out,
+        .lang-cycle__label.lang-cycle--out {
+            opacity: 0;
+            transform: translateY(-0.35rem);
+        }
+
+        .lang-cycle__code.lang-cycle--in,
+        .lang-cycle__label.lang-cycle--in {
+            opacity: 0;
+            transform: translateY(0.35rem);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .lang-cycle__code,
+            .lang-cycle__label {
+                transition: none;
+            }
+        }
+
         /* Custom Animations */
         @keyframes float {
 
