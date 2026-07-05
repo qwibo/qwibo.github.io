@@ -45,22 +45,23 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --- Scroll Effect for Navbar ---
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      navbar.classList.add('shadow-md');
-      // We adjust background opacity via classes in HTML, but here we enforce backdrop logic
-      if (document.documentElement.classList.contains('dark')) {
-           navbar.classList.remove('bg-white/80', 'dark:bg-neutral-950/80');
-           navbar.classList.add('bg-white/95', 'dark:bg-neutral-950/95');
+  if (navbar) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('shadow-md');
+        if (document.documentElement.classList.contains('dark')) {
+          navbar.classList.remove('bg-white/80', 'dark:bg-neutral-950/80');
+          navbar.classList.add('bg-white/95', 'dark:bg-neutral-950/95');
+        } else {
+          navbar.classList.remove('bg-white/80');
+          navbar.classList.add('bg-white/95');
+        }
       } else {
-           navbar.classList.remove('bg-white/80');
-           navbar.classList.add('bg-white/95');
+        navbar.classList.remove('shadow-md', 'bg-white/95', 'dark:bg-neutral-950/95');
+        navbar.classList.add('bg-white/80', 'dark:bg-neutral-950/80');
       }
-    } else {
-      navbar.classList.remove('shadow-md', 'bg-white/95', 'dark:bg-neutral-950/95');
-      navbar.classList.add('bg-white/80', 'dark:bg-neutral-950/80');
-    }
-  });
+    });
+  }
 
   // --- Scroll Reveal Animation ---
   const revealObserver = new IntersectionObserver((entries) => {

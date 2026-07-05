@@ -77,20 +77,20 @@ cta:
 # Hero stat: language cycle (matches qwibo CORE_LANGUAGE_CODES)
 hero_languages:
   - code: IT
-    it: Italiano
-    en: Italian
+    label_it: Italiano
+    label_en: Italian
   - code: EN
-    it: Inglese
-    en: English
+    label_it: Inglese
+    label_en: English
   - code: ES
-    it: Spagnolo
-    en: Spanish
+    label_it: Spagnolo
+    label_en: Spanish
   - code: DE
-    it: Tedesco
-    en: German
+    label_it: Tedesco
+    label_en: German
   - code: FR
-    it: Francese
-    en: French
+    label_it: Francese
+    label_en: French
 
 # MkDocs i18n (folder): English at /docs/, Italian at /docs/it/
 docs:
