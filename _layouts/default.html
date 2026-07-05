@@ -134,7 +134,7 @@
             .hero-index__grid {
                 grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
                 gap: 2.5rem;
-                align-items: center;
+                align-items: start;
             }
 
             .hero-index__title {
@@ -146,6 +146,24 @@
                 max-width: 100%;
                 margin-right: 0;
             }
+        }
+
+        /* Windows 11 title bar (hero / app mockups) */
+        .win11-titlebar__btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.75rem;
+            height: 1.75rem;
+            font-size: 10px;
+            line-height: 1;
+            color: #9ca3af;
+            font-family: ui-sans-serif, system-ui, sans-serif;
+        }
+
+        .win11-titlebar__btn--close:hover {
+            color: #f9fafb;
+            background: #c42b1c;
         }
 
         [data-hero-lang-cycle] [data-hero-lang-code] {

@@ -9,7 +9,7 @@ description: "Got a recording? Turn it into text and subtitles on your PC. Priva
 <section class="relative min-h-screen flex items-center pt-32 pb-20 overflow-x-hidden bg-grid-pattern">
     <div class="absolute inset-0 bg-white/90 dark:bg-brand-dark/90 transition-colors"></div>
 
-    <div class="max-w-7xl mx-auto hero-index__grid grid gap-8 items-center px-6 w-full relative z-10">
+    <div class="max-w-7xl mx-auto hero-index__grid grid gap-8 items-start px-6 w-full relative z-10">
         <div class="reveal active min-w-0">
             <div
                 class="inline-flex items-center gap-2 px-4 py-2 rounded-none bg-brand-purple/10 border-l-4 border-brand-purple text-xs font-mono tracking-widest uppercase mb-8 text-brand-purple dark:text-brand-purpleLight">
@@ -59,14 +59,7 @@ description: "Got a recording? Turn it into text and subtitles on your PC. Priva
             <div class="hero-index__visual relative flex flex-col w-full max-w-full">
             {% include hero-qwibo-animation.html %}
             <div class="relative bg-[#0a0a0a] rounded-lg border border-brand-purple/30 shadow-2xl overflow-hidden font-mono text-xs">
-                <div class="bg-[#111] px-3 py-1.5 flex items-center justify-between border-b border-white/10">
-                    <div class="flex gap-2">
-                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                    </div>
-                    <div class="text-gray-500 text-[11px]">qwibo — first run</div>
-                </div>
+                {% include win11-titlebar.html title="Qwibo — Windows" %}
                 <div class="px-3 py-2.5 space-y-1 text-gray-300 leading-snug">
                     <div class="opacity-30 text-gray-500">Upload: marco_call_2h.mp4</div>
                     <div class="opacity-40">Marco walks away — processing continues locally</div>

@@ -1,0 +1,11 @@
+<div class="win11-titlebar flex items-center justify-between gap-3 px-3 py-1.5 bg-[#1c1c1c] border-b border-white/10 select-none">
+    <div class="flex items-center gap-2 min-w-0">
+        <img src="{{ '/assets/images/logo/logo-mark.svg' | relative_url }}" alt="" class="w-4 h-4 shrink-0" width="16" height="16" aria-hidden="true" />
+        <span class="text-[11px] text-gray-400 font-mono truncate">{{ include.title }}</span>
+    </div>
+    <div class="flex items-center shrink-0 win11-titlebar__controls" aria-hidden="true">
+        <span class="win11-titlebar__btn" title="Minimize">&#8722;</span>
+        <span class="win11-titlebar__btn" title="Maximize">&#9633;</span>
+        <span class="win11-titlebar__btn win11-titlebar__btn--close" title="Close">&#10005;</span>
+    </div>
+</div>
