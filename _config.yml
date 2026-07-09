@@ -69,8 +69,10 @@ social:
 cta:
   github_url: "https://github.com/qwibo/qwibo"
   docs_url: "https://qwibo.github.io/docs"
-  # Direct installer download (GitHub Releases, latest stable asset)
-  download_url: "https://github.com/qwibo/qwibo/releases/latest/download/qwibo-setup.exe"
+  # Direct installer download (GitHub Releases).
+  # Pre-release alpha: URL puntuale al tag (aggiornare versione+nome file a ogni release
+  # finche' non esiste una release "latest" stabile, che permetterebbe /releases/latest/download/).
+  download_url: "https://github.com/qwibo/qwibo/releases/download/v0.1.0-alpha.1/Qwibo-Setup-0.1.0-alpha.1.exe"
   download_page_it: "/it/download/"
   download_page_en: "/en/download/"
 
