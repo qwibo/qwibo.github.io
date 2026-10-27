@@ -8,7 +8,8 @@ author:
   email: "info@antoniotrento.net"
   bio: "Local AI & Automation"
 
-og_image: "/assets/images/logo/favicon.svg"
+og_image: "/assets/og/logo-og.png"
+og_image_alt: "Logo Qwibo"
 
 paginate: 20
 paginate_path: "/blog/page:num"
